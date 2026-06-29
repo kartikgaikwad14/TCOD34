@@ -1,87 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Nandini ❤️</title>
-
-<link rel="stylesheet" href="pamper.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Nandini ❤️</title>
+  <link rel="stylesheet" href="pamper.css">
 </head>
-
 <body>
 
-<div class="hearts"></div>
+  <!-- Floating Hearts Container -->
+  <div class="hearts-container" id="heartsContainer"></div>
 
-<div class="container">
+  <!-- DashBoard Layout -->
+  <div class="dashboard-container">
+    
+    <header class="dashboard-header">
+      <h1>🌸 Hey Nandini 🌸</h1>
+      <p>This is your cozy corner of the internet. You have to be strong. ❤️</p>
+    </header>
 
-<h1>🌸 Hey Nandini 🌸</h1>
+    <div class="dashboard-grid">
 
-<h2>You don't have to be strong today.</h2>
+      <!-- Left Column -->
+      <div class="dashboard-col">
+        
+        <!-- Mood Selector Widget -->
+        <div class="glass-card">
+          <h2 class="widget-title">💭 How are you feeling, Nandini?</h2>
+          <div class="mood-buttons">
+            <button class="mood-btn" data-mood="pain">⚡<span>Cramps</span></button>
+            <button class="mood-btn" data-mood="sad">😢<span>Low</span></button>
+            <button class="mood-btn" data-mood="exhausted">😴<span>Exhausted</span></button>
+            <button class="mood-btn" data-mood="tired">🥱<span>Tired</span></button>
+            <button class="mood-btn" data-mood="okay">🌸<span>Okay</span></button>
+          </div>
+          <div class="mood-response-box" id="moodResponse">
+            Select a mood above to receive a little customized comfort. ✨
+          </div>
+        </div>
 
-<p class="message">
-I know these days aren't easy.
-So here's a little corner of the internet made just for you.
+        <!-- Water Tracker Widget -->
+        <div class="glass-card">
+          <h2 class="widget-title">💧 Hydration Reminder</h2>
+          <div class="water-tracker">
+            <div class="water-left">
+              <div class="water-count" id="waterCount">0</div>
+              <div class="water-goal">Cups Logged Today</div>
+              <button class="water-btn" id="waterBtn">+1 Cup 🤍</button>
+            </div>
+            <div class="water-glass-container">
+              <div class="water-fill" id="waterFill">
+                <div class="water-wave"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-Remember...
+        <!-- Spotify Embed Widget -->
+        <div class="glass-card spotify-card">
+          <h2 class="widget-title">🎵 Cozy Background Music</h2>
+          <div class="spotify-embed-container">
+            <iframe 
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhp7l3T0?utm_source=generator&theme=0" 
+              width="100%" 
+              height="80" 
+              frameBorder="0" 
+              allowfullscreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
 
-❤️ You're loved.
+      </div>
 
-🌷 You're beautiful.
+      <!-- Right Column -->
+      <div class="dashboard-col">
+        
+        <!-- Breathing Helper Widget -->
+        <div class="glass-card breathing-card" id="breatheCard">
+          <h2 class="widget-title">🌬️ Cramp & Stress Relief</h2>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 5px;">Synchronize your breathing with the bubble to relax.</p>
+          <div class="breathe-container">
+            <div class="breathe-ring"></div>
+            <div class="breathe-circle" id="breatheText">Ready</div>
+          </div>
+          <div class="breathe-instructions" id="breatheInstructions">Click below to start deep breathing</div>
+          <button class="breathe-btn" id="breatheBtn">Start Breathing</button>
+        </div>
 
-✨ You're stronger than your cramps.
+        <!-- Open When Envelopes Widget -->
+        <div class="glass-card">
+          <h2 class="widget-title">💌 Hidden Letters For You</h2>
+          <div class="envelopes-grid">
+            <div class="envelope-card" data-letter="pain">
+              <div class="envelope-icon">💊</div>
+              <div class="envelope-title">Open when in pain</div>
+            </div>
+            <div class="envelope-card" data-letter="sad">
+              <div class="envelope-icon">😢</div>
+              <div class="envelope-title">Open when feeling down</div>
+            </div>
+            <div class="envelope-card" data-letter="miss">
+              <div class="envelope-icon">👩‍❤️‍👨</div>
+              <div class="envelope-title">Open when you miss me</div>
+            </div>
+            <div class="envelope-card" data-letter="smile">
+              <div class="envelope-icon">⭐</div>
+              <div class="envelope-title">Open for a smile</div>
+            </div>
+          </div>
+        </div>
 
-And you deserve all the cuddles in the world.
-</p>
+        <!-- Need More Love Button -->
+        <div class="glass-card love-button-card">
+          <button class="love-btn" id="loveBtn">
+            Need More Love? 💖
+          </button>
+          <p class="love-subtitle">Click for a screen explosion of affection!</p>
+        </div>
 
-<button id="loveBtn">
-Give Me A Hug 🤍
-</button>
+      </div>
 
-<div id="popup" class="popup">
-</div>
+    </div>
 
-<div class="cards">
+    <footer class="footer-text">
+      Made with ❤️ just for you, Nandini.
+    </footer>
+  </div>
 
-<div class="card">
-<h3>🍫 Comfort Food</h3>
-<p>Eat your favourite chocolate.
-Calories don't count today ❤️</p>
-</div>
+  <!-- Letter Modals -->
+  <div class="modal-overlay" id="letterModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="letter-content" id="letterText"></div>
+    </div>
+  </div>
 
-<div class="card">
-<h3>💧 Hydration</h3>
-<p>Drink some water.
-Your body will thank you.</p>
-</div>
+  <!-- Need More Love Overlay -->
+  <div class="love-overlay" id="loveOverlay">
+    <div class="love-overlay-card">
+      <div class="love-overlay-emoji">💝</div>
+      <div class="love-overlay-msg" id="loveOverlayMsg"></div>
+      <button class="love-overlay-close" id="loveOverlayClose">Aww, thank you! 🥰</button>
+    </div>
+  </div>
 
-<div class="card">
-<h3>🛏 Rest</h3>
-<p>Take a nap without feeling guilty.</p>
-</div>
-
-<div class="card">
-<h3>🌸 Self Care</h3>
-<p>Warm blanket, comfy clothes,
-and your favourite series.</p>
-</div>
-
-</div>
-
-<a class="playlist"
-href="https://open.spotify.com"
-target="_blank">
-🎵 Cozy Playlist
-</a>
-
-<p class="footer">
-Made with ❤️ just for you.
-</p>
-
-</div>
-
-<script src="pamper.js"></script>
-
+  <script src="pamper.js"></script>
 </body>
 </html>
