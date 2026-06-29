@@ -1,7 +1,7 @@
 // Mood Selector Responses
 const moodResponses = {
   pain: "I know cramps are awful, Nandini. 🥺 Get your heating pad, lay down under a warm blanket, and try the breathing helper on the right. You don't have to be active today—cozy rest is your only job right now! 🍫",
-  sad: "Sending you the biggest virtual hug in the world, Nandini! 🤍 It is completely okay to feel low sometimes. I'm right here with you in spirit, holding your hand and reminding you how loved and precious you are.",
+  sad: "Sending you the biggest virtual hug in the world, Nandini! 🤍 It is completely okay to feel low sometimes. I'm right here with you in spirit, holding your hand and reminding you how incredibly appreciated and special you are as my best friend.",
   exhausted: "You've been pushing yourself too hard, beautiful. 🛌 Lie down, close your eyes, and take a guilt-free nap. The world can wait, but your rest cannot. Sleep well, Nandini! ✨",
   tired: "Take a deep breath and relax, Nandini. 🌸 Put on your coziest clothes, grab a warm drink, and watch your favorite series. Let yourself unwind completely today.",
   okay: "I'm so glad you're feeling okay, Nandini! 🌸 Keep smiling and have a wonderful, gentle day. Remember, I'm always cheering you on and thinking about you!"
@@ -11,7 +11,7 @@ const moodResponses = {
 const letterContents = {
   pain: `Hey Nandini,
 
-I hate seeing you in pain, and I wish I could be there to massage your back and hold your hand right now. 🥺
+I hate seeing you in pain, and I wish I could be there to help you out and keep you company right now. 🥺
 
 Since I can't be there physically, here is my prescription for you:
 1. Find your warmest, softest blanket.
@@ -19,7 +19,7 @@ Since I can't be there physically, here is my prescription for you:
 3. Make a warm cup of herbal tea or cocoa.
 4. Eat a piece of chocolate (calories don't count today, I promise!).
 
-You are so strong, my love. Close your eyes, run the breathing helper on this page, and let your body rest. I love you so much. ❤️`,
+You are so strong, bestie. Close your eyes, run the breathing helper on this page, and let your body rest. You've got this! ❤️`,
 
   sad: `Hey Nandini,
 
@@ -33,13 +33,13 @@ Whenever you feel sad, please remember:
 
 Take a deep breath. It's okay to feel sad, but don't stay down for too long. I am always just a message or call away, and I am sending you a massive, tight virtual hug. 🤍`,
 
-  miss: `My beautiful Nandini,
+  miss: `Hey Nandini,
 
-If you're reading this, you must be missing me. Just know that I am missing you even more. 👩‍❤️‍👨
+If you're reading this, you must be missing your bestie! Just know that I miss hanging out with you too! 🙋‍♂️
 
-Distance is hard, but every single mile is worth it because it leads to you. Close your eyes for a second, take a deep breath, and imagine me wrapping my arms around you and holding you tight. 
+It's hard when we can't hang out, but we'll make up for it next time. Close your eyes for a second, take a deep breath, and think of all the fun times we've had!
 
-I think about you all day long, and I can't wait until the next time we can be together. Until then, hold on to this note, look at the night sky (we're looking at the same stars!), and remember how deeply I love you. ✨`,
+I can't wait until the next time we hang out. Until then, hold on to this note, and remember how much your best friend appreciates you! ✨`,
 
   smile: `Hey Nandini! 😊
 
@@ -55,15 +55,15 @@ Here is a little reminder to make you smile:
    *What do you call a sleeping dinosaur?*
    *A dino-snore!* 🦕
 
-I hope this brought a little smile to your beautiful face. Have a wonderful day, my favorite girl! 🌟`
+I hope this brought a little smile to your beautiful face. Have a wonderful day, bestie! 🌟`
 };
 
-// Need More Love Overlay Messages
+// Need More Comfort Overlay Messages
 const loveMessages = [
-  "Nandini, you are the absolute best thing that has ever happened to me. I love you to the moon and back! 🌙❤️",
-  "Just a reminder: you deserve all the happiness, cuddles, and love in the entire universe! 💖✨",
-  "I love you more than words can say. You're my favorite person forever! 🥰🌸",
-  "You are my sunshine on a cloudy day, Nandini. Sending you infinite kisses! 💋❤️"
+  "Nandini, you are the absolute best friend anyone could ask for. I'm so lucky to have you in my life! 🌸✨",
+  "Just a reminder: you deserve all the happiness, comfort, and rest in the entire universe! 💖✨",
+  "You're my absolute favorite bestie forever! 🥰🌸",
+  "You are the best friend ever, Nandini. Sending you the biggest virtual hugs! 🤗❤️"
 ];
 
 // --- WIDGET LOGIC ---
